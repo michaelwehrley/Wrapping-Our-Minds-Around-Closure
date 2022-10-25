@@ -20,7 +20,7 @@ function identity(x) {
   return x;
 }
 
-log(identity(3)) // 3
+identity(3) // 3
 
 // 3 binary functions
 
@@ -43,5 +43,11 @@ function mul(first, second) {
 console.log(mul(3, 4)) // 12
 
 var three = identityf(3);
+
+function identityf(x) {
+  return function() {
+    return x;
+  }
+}
 
 log(three()) // 3
