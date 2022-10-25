@@ -28,19 +28,19 @@ function add(first, second) {
   return first + second;
 }
 
-console.log(add(3, 4)) // 7
+add(3, 4) // 7
 
 function sub(first, second) {
   return first - second;
 }
 
-console.log(sub(3, 4)) // -1
+sub(3, 4) // -1
 
 function mul(first, second) {
   return first * second;
 }
 
-console.log(mul(3, 4)) // 12
+mul(3, 4) // 12
 
 var three = identityf(3);
 
@@ -68,11 +68,15 @@ three() // 3
 */
 
 function liftf(binary) {
-
+  return function(first) {
+    return function(second) {
+      return binary(first, second)
+    }
+  };
 }
 
 var addf = liftf(add);
 
-addf(3)(4) // 7
+console.log(addf(3)(4)) // 7
 
-liftf(mul)(5)(6) // 30
+console.log(liftf(mul)(5)(6)) // 30
