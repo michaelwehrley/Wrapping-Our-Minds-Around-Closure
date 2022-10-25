@@ -25,19 +25,19 @@ log(identity(3)) // 3
 // 3 binary functions
 
 function add(first, second) {
-
+  return first + second;
 }
 
 console.log(add(3, 4)) // 7
 
 function sub(first, second) {
-
+  return first - second;
 }
 
 console.log(sub(3, 4)) // -1
 
 function mul(first, second) {
-
+  return first * second;
 }
 
 console.log(mul(3, 4)) // 12
