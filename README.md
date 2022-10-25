@@ -11,11 +11,17 @@ Intro to Closure via [The Good Parts of Javascript and the Web by Douglas Crockf
 
 5. Open the `index.js` to write your functions (via `subl .` etc).  The first function `identity` is defined, but the implemention is not completed yet - that is your first task.
 
+## Resources: 
+* [The Good Parts of Javascript and the Web by Douglas Crockford](https://frontendmasters.com/courses/good-parts-javascript-web/)
+* [Douglas_Crockford Wiki](https://en.wikipedia.org/wiki/Douglas_Crockford)
+* Douglas Crockford's website: https://www.crockford.com/alphabet.html
+* Kyle Simpson's [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS)
+
 ## Our Goal Primary Goal
 
 Our goal is to write a *higher-order function* that has access to the declaration context's scope (i.e., *closure*):
 
-### Higher Order Functions
+### Higher Order Functions & Closure
 
 **Higher-Order Functions:** are functions that _**receive**_ one more more functions as parameter(s) and _**return**_ a function(s) as a result.
 
@@ -27,13 +33,19 @@ var addf = liftf(add);
 addf(3)(4) // 7
 ```
 
-Resources: 
-* [The Good Parts of Javascript and the Web by Douglas Crockford](https://frontendmasters.com/courses/good-parts-javascript-web/)
-* [Douglas_Crockford Wiki](https://en.wikipedia.org/wiki/Douglas_Crockford)
-* Douglas Crockford's website: https://www.crockford.com/alphabet.html
-* Kyle Simpson's [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS)
+### Our Work:
 
-### Problems
+* `useMemo` & `useContext`
+* `connect`
+
+```js
+import { connect } from 'react-redux';
+
+export default connect(mapStateToProps, mapDispatchToProps)(FooBarBaz);
+
+```
+
+## Problems
 
 1. `identity(3) // 3`
 
