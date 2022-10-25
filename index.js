@@ -13,3 +13,11 @@ function log (arg) {
   When done successfully, you will see the
   value x (i.e., 3) on the screen
 */
+
+// Warm-up task
+
+function identity() {
+  // TO DO...
+}
+
+log(identity(3)) // 3
