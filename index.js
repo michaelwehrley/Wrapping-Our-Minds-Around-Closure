@@ -52,11 +52,27 @@ function identityf(x) {
 
 three() // 3
 
-function addf(first) {
-  return function(second) {
-    return first + second;
-    // return add(first, second)
-  }
+// function addf(first) {
+//   return function(second) {
+//     return first + second;
+//     // return add(first, second)
+//   }
+// }
+
+// log(addf(3)(4)) // 7
+
+/*
+  Higher Order Functions are functions that receive
+  other functions as paramters and return other functions
+  as results
+*/
+
+function liftf(binary) {
+
 }
 
-log(addf(3)(4)) // 7
+var addf = liftf(add);
+
+addf(3)(4) // 7
+
+liftf(mul)(5)(6) // 30
