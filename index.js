@@ -41,3 +41,7 @@ function mul(first, second) {
 }
 
 console.log(mul(3, 4)) // 12
+
+var three = identityf(3);
+
+log(three()) // 3
