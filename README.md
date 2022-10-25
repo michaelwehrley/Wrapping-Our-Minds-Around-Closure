@@ -1,23 +1,25 @@
 # Wrapping Our Minds Around Closure
 Intro to Closure via [The Good Parts of Javascript and the Web by Douglas Crockford](https://frontendmasters.com/courses/good-parts-javascript-web/)
 
-* `$ git clone https://github.com/michaelwehrley/Wrapping-Our-Minds-Around-Closure.git`
+1. `$ git clone https://github.com/michaelwehrley/Wrapping-Our-Minds-Around-Closure.git`
 
-* `$ cd Wrapping-Our-Minds-Around-Closure`
+2. `$ cd Wrapping-Our-Minds-Around-Closure`
 
-* In your browswer, visit `file:///path-to-this-file/Wrapping-Our-Minds-Around-Closure/index.html`
+3. In your browswer, visit `file:///path-to-this-file/Wrapping-Our-Minds-Around-Closure/index.html`
 
-* You should see an h1 reading "Wrapping Our Minds Around Closure"
+4. You should see an `h1` reading "Wrapping Our Minds Around Closure"
 
-* Fetch all tags vis `git fetch --all --tags`
-
-* Checkout the tag via `git checkout 1.0.0`
-
-* Open the `index.js` to write your functions (via `subl .` etc).  The first function `identity` is defined, but the implemention is not completed yet - that is your first task.
+5. Open the `index.js` to write your functions (via `subl .` etc).  The first function `identity` is defined, but the implemention is not completed yet - that is your first task.
 
 ## Our Goal Primary Goal
 
-To write a *higher order function* that has access to the declaration context's scope (i.e., *closure*):
+Our goal is to write a *higher-order function* that has access to the declaration context's scope (i.e., *closure*):
+
+### Higher Order Functions
+
+**Higher-Order Functions:** are functions that _**receive**_ one more more functions as parameter(s) and _**return**_ a function(s) as a result.
+
+**Closure:** Is when an expression has access to all the necessary variables it needs when evaluating. 
 
 ```js
 var addf = liftf(add);
@@ -26,13 +28,10 @@ addf(3)(4) // 7
 ```
 
 Resources: 
-* [Douglas_Crockford](https://en.wikipedia.org/wiki/Douglas_Crockford)
+* [The Good Parts of Javascript and the Web by Douglas Crockford](https://frontendmasters.com/courses/good-parts-javascript-web/)
+* [Douglas_Crockford Wiki](https://en.wikipedia.org/wiki/Douglas_Crockford)
 * Douglas Crockford's website: https://www.crockford.com/alphabet.html
 * Kyle Simpson's [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS)
-
-### Higher Order Functions
-
-*Higher order functions* are functions that _**receive**_ other functions as paramter(s) and _**return**_ other function(s) as result(s).
 
 ### Problems
 
