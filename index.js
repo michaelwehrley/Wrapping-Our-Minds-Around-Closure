@@ -16,8 +16,8 @@ function log (arg) {
 
 // Warm-up task
 
-function identity() {
-  // TO DO...
+function identity(x) {
+  return x;
 }
 
 log(identity(3)) // 3
