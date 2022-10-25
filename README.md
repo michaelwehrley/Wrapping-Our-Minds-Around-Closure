@@ -12,8 +12,8 @@ Intro to Closure via [The Good Parts of Javascript and the Web by Douglas Crockf
 5. Open the `index.js` to write your functions (via `subl .` etc).  The first function `identity` is defined, but the implemention is not completed yet - that is your first task.
 
 ## Resources: 
-* [The Good Parts of Javascript and the Web by Douglas Crockford](https://frontendmasters.com/courses/good-parts-javascript-web/)
-* [Douglas_Crockford Wiki](https://en.wikipedia.org/wiki/Douglas_Crockford)
+* Frontend Masters: [The Good Parts of Javascript and the Web by Douglas Crockford](https://frontendmasters.com/courses/good-parts-javascript-web/)
+* Wiki: [Douglas_Crockford](https://en.wikipedia.org/wiki/Douglas_Crockford)
 * Douglas Crockford's website: https://www.crockford.com/alphabet.html
 * Kyle Simpson's [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS)
 
@@ -33,7 +33,7 @@ var addf = liftf(add);
 addf(3)(4) // 7
 ```
 
-### Our Work:
+### Our Work
 
 * `useMemo` & `useContext`
 * `connect`
