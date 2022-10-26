@@ -1,28 +1,35 @@
 'use strict';
 
+// Warm-up task
+
 function identity(x) {
   return x;
 }
 
-identity(3) // 3
+// console.log(identity(3)) // 3
+
+// 3 binary functions
 
 function add(first, second) {
   return first + second;
 }
 
-add(3, 4) // 7
+// console.log(add(3, 4)) // 7
 
 function sub(first, second) {
   return first - second;
 }
 
-sub(3, 4) // -1
+// console.log(sub(3, 4)) // -1
 
-function mul(first, second) {
+function multiply(first, second) {
   return first * second;
 }
 
-mul(3, 4) // 12
+// console.log(multiply(3, 4)) // 12
+
+
+// Functions as First-Class Citizens
 
 var three = identityf(3);
 
@@ -32,15 +39,22 @@ function identityf(x) {
   }
 }
 
-three() // 3
+// console.log(three()) // 3
 
 function addf(first) {
   return function(second) {
     return add(first, second)
+    // return first + second;
   }
 }
 
-addf(3)(4) // 7
+// console.log(addf(3)(4)) // 7
+
+/*
+  Note: Higher Order Functions are functions that receive
+  other functions as paramters and return other functions
+  as results.
+*/
 
 function liftf(binary) {
   return function(first) {
@@ -51,6 +65,10 @@ function liftf(binary) {
 }
 
 var addf = liftf(add);
-addf(3)(4) // 7
+// console.log(addf(3)(4)) // 7
 
-liftf(mul)(5)(6) // 30
+// console.log(liftf(multiply)(5)(6)) // 30
+
+// console.log(incrementFactory(byOne)) // 1
+// console.log(incrementFactory(byTwo)) // 3
+// console.log(incrementFactory(byOne)) // 4
