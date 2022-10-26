@@ -1,8 +1,8 @@
 function incrementInitializer() {
   var value = 0;
 
-  return function(inc) {
-    value = inc(value)
+  return function(incFn) {
+    value = incFn(value)
     return value;
   }
 }
