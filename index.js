@@ -8,7 +8,6 @@ function identity(x) {
 
 console.log(identity(3)) // 3
 
-
 // 3 binary functions
 
 function add(first, second) {
@@ -29,6 +28,7 @@ function mul(first, second) {
 
 mul(3, 4) // 12
 
+
 var three = identityf(3);
 
 function identityf(x) {
@@ -44,9 +44,9 @@ function addf(first) {
 addf(3)(4) // 7
 
 /*
-  Higher Order Functions are functions that receive
+  Note: Higher Order Functions are functions that receive
   other functions as paramters and return other functions
-  as results
+  as results.
 */
 
 function liftf(binary) {

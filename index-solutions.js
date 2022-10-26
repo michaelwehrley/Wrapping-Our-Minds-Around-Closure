@@ -1,14 +1,10 @@
 'use strict';
 
-// Warm-up task
-
 function identity(x) {
   return x;
 }
 
 identity(3) // 3
-
-// 3 binary functions
 
 function add(first, second) {
   return first + second;
@@ -40,18 +36,11 @@ three() // 3
 
 function addf(first) {
   return function(second) {
-    return first + second;
-    // return add(first, second)
+    return add(first, second)
   }
 }
 
 addf(3)(4) // 7
-
-/*
-  Higher Order Functions are functions that receive
-  other functions as paramters and return other functions
-  as results
-*/
 
 function liftf(binary) {
   return function(first) {
