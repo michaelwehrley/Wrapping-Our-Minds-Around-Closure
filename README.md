@@ -23,23 +23,22 @@ Intro to Closure via [The Good Parts of Javascript and the Web by Douglas Crockf
 
 Our goal is to write a *higher-order function* that has access to the declaration context's scope (i.e., *closure*):
 
-### Higher Order Functions & Closure
+### Higher Order Functions and Closure and Our Work
+
+* `useMemo` & `useContext`
+* `connect`
+
+<img width="760" alt="Screen Shot 2022-10-26 at 10 03 11 AM" src="https://user-images.githubusercontent.com/526136/198063085-d2743651-045c-4745-a866-d9fdd949d9ea.png">
 
 **Higher-Order Functions:** are functions that _**receive**_ one more more functions as parameter(s) and _**return**_ a function(s) as a result.
 
-**Closure:** Is when an expression has access to all the necessary variables it needs when evaluating. 
+**Closure:** [Closure gives you access to an outer function's scope from an inner function.](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures) or [You Don't Know JS - scopes and closures](https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/scope-closures/ch7.md)
 
 ```js
 var addf = liftf(add);
 
 addf(3)(4) // 7
 ```
-
-### Our Work
-
-* `useMemo` & `useContext`
-* `connect`
-
 
 ## Problems
 
