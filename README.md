@@ -9,6 +9,8 @@ Intro to Closure via [The Good Parts of Javascript and the Web by Douglas Crockf
 
 4. You should see an `h1` reading "Wrapping Our Minds Around Closure"
 
+<img width="1005" alt="Screen Shot 2022-10-26 at 9 41 41 AM" src="https://user-images.githubusercontent.com/526136/198058140-4462bc91-dbcf-40d9-8f26-78b79d9716e4.png">
+
 5. Open the `index.js` to write your functions (via `subl .` etc).  The first function `identity` is defined, but the implementation is not completed yet - that is your first task.
 
 ## Resources: 
