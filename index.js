@@ -6,7 +6,8 @@ function identity(x) {
 
 }
 
-identity(3) // 3
+console.log(identity(3)) // 3
+
 
 // 3 binary functions
 

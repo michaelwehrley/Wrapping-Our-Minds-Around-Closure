@@ -40,12 +40,6 @@ addf(3)(4) // 7
 * `useMemo` & `useContext`
 * `connect`
 
-```js
-import { connect } from 'react-redux';
-
-export default connect(mapStateToProps, mapDispatchToProps)(FooBarBaz);
-
-```
 
 ## Problems
 
