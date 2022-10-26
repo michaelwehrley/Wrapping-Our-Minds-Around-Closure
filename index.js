@@ -35,13 +35,13 @@ function identityf(x) {
 
 }
 
-three() // 3
+// three() // 3
 
 function addf(first) {
 
 }
 
-addf(3)(4) // 7
+// addf(3)(4) // 7
 
 /*
   Note: Higher Order Functions are functions that receive
@@ -53,7 +53,7 @@ function liftf(binary) {
 
 }
 
-var addf = liftf(add);
+// var addf = liftf(add);
 
-addf(3)(4) // 7
-liftf(mul)(5)(6) // 30
+// addf(3)(4) // 7
+// liftf(mul)(5)(6) // 30

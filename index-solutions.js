@@ -51,6 +51,6 @@ function liftf(binary) {
 }
 
 var addf = liftf(add);
-
 addf(3)(4) // 7
+
 liftf(mul)(5)(6) // 30
