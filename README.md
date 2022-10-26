@@ -5,11 +5,11 @@ Intro to Closure via [The Good Parts of Javascript and the Web by Douglas Crockf
 
 2. `$ cd Wrapping-Our-Minds-Around-Closure`
 
-3. In your browswer, visit `file:///path-to-this-file/Wrapping-Our-Minds-Around-Closure/index.html`
+3. In your browser, visit `file:///path-to-this-file/Wrapping-Our-Minds-Around-Closure/index.html`
 
 4. You should see an `h1` reading "Wrapping Our Minds Around Closure"
 
-5. Open the `index.js` to write your functions (via `subl .` etc).  The first function `identity` is defined, but the implemention is not completed yet - that is your first task.
+5. Open the `index.js` to write your functions (via `subl .` etc).  The first function `identity` is defined, but the implementation is not completed yet - that is your first task.
 
 ## Resources: 
 * Frontend Masters: [The Good Parts of Javascript and the Web by Douglas Crockford](https://frontendmasters.com/courses/good-parts-javascript-web/)
