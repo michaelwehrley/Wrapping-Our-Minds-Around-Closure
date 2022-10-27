@@ -31,7 +31,7 @@ function multiply(first, second) {
 
 // Functions as First-Class Citizens
 
-var three = identityf(3);
+// var three = identityf(3);
 
 function identityf(x) {
 
@@ -55,11 +55,14 @@ function liftf(binary) {
 
 }
 
-var addf = liftf(add);
+// var addf = liftf(add);
 // console.log(addf(3)(4)) // 7
 
 // console.log(liftf(multiply)(5)(6)) // 30
 
+// const incrementFactory = incrementInitializer()
+
 // console.log(incrementFactory(byOne)) // 1
 // console.log(incrementFactory(byTwo)) // 3
 // console.log(incrementFactory(byOne)) // 4
+

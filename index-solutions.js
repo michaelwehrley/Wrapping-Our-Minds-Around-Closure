@@ -68,7 +68,3 @@ var addf = liftf(add);
 // console.log(addf(3)(4)) // 7
 
 // console.log(liftf(multiply)(5)(6)) // 30
-
-// console.log(incrementFactory(byOne)) // 1
-// console.log(incrementFactory(byTwo)) // 3
-// console.log(incrementFactory(byOne)) // 4

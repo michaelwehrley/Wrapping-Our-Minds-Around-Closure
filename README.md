@@ -68,3 +68,11 @@ var addf = liftf(add);
 addf(3)(4) // 7
 liftf(mul)(5)(6) // 30 
 ```
+8. `incrementFactory`
+```js
+incrementFactory = incrementInitializer()
+
+incrementFactory(byOne) // 1
+incrementFactory(byTwo) // 3
+incrementFactory(byOne) // 4
+```
